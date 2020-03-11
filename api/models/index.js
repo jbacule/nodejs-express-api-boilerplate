@@ -7,7 +7,7 @@ const options = {
 	useUnifiedTopology: true,
 	useCreateIndex: true
 };
-const address = `mongodb+srv://${ck.MONGODB_USER}:${ck.MONGODB_PASS}@listing-tools-sksz1.mongodb.net/react?retryWrites=true&w=majority`;
+const address = `mongodb+srv://${ck.MONGODB_USER}:${ck.MONGODB_PASS}@${ck.MONGODB_CLUSTER}-sksz1.mongodb.net/${ck.MONGODB_DATABASE}?retryWrites=true&w=majority`;
 
 // mongoose.set('debug', true);
 mongoose.Promise = Promise;
